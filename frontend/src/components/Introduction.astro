@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import mailIcon from '../assets/mail_icon.png';
 import githubIcon from '../assets/github_icon.png';
+import linkedinIcon from '../assets/linkedin_icon.png';
 ---
 
 
@@ -10,23 +11,24 @@ import githubIcon from '../assets/github_icon.png';
 <div class="introduction-container">
 	<div class="introduction-wrapper">
 		<div class="name-wrapper">
-			<h1 class="title-font">Antón Gendra Rodríguez</h1>
+			<h1 class="title-font">Antón censored jejejej<!--Gendra Rodríguez--></h1>
 			<h2>Full-stack developer</h2>
 			<p>with some DevOps seasoning</p>
 		</div>
 		<div class="mail">
-			<a href="mailto:gendra.job@gmail.com"><Image class="mail-icon" src={ mailIcon } alt="emai icon"/>get in touch</a>
+			<a href="mailto:gendra.job@gmail.com"><Image class="mail-icon" src={ mailIcon } alt="emai icon"/><strong>get in touch</strong></a>
 		</div>
 	</div>
 	
 	<div class="description">	
-		<p class="introduction">Currently working for a Startup based in Spain.</p>
-		<p class="mail">My job is to build systems, code new functionalities and solve issues. Ensuring that the best product is delivered to costumers.</p>
+		<p class="introduction">Really, really, but really censored.<!--Currently working for a Startup based in Spain.--></p>
+		<p class="mail">Im so sorry, Jolyn, this must be censored too :-(. But enjoy the rest of the page, this is the last censored content, I swear.<!--My job is to build systems, code new functionalities and solve issues. Ensuring that the best product is delivered to costumers.--></p>
 	</div>
 </div>
 
 <div class="social-dir">
-	<a href="https://github.com/gen-4"><Image class="social-img" src={ githubIcon } alt="github icon" />Github</a>
+	<a href="https://github.com/gen-4"><Image class="social-img" src={ githubIcon } alt="github icon" /><span>Github</span></a>
+	<a href="https://www.linkedin.com/in/anton-gendra-rodriguez/"><Image class="social-img" src={ linkedinIcon } alt="linkedin icon" /><span>Linkedin</span></a>
 </div>
 
 
@@ -66,6 +68,8 @@ import githubIcon from '../assets/github_icon.png';
 		border-radius: 10px;
 		padding: 0 1.5rem;
 		gap: .5rem;
+		background: linear-gradient(to bottom right, var(--dark-blue), var(--lighter-blue));
+		box-shadow: 2px 1px 4px 0 var(--dark-blue);
 	}
 
 	.introduction-wrapper .mail .mail-icon {
@@ -116,24 +120,33 @@ import githubIcon from '../assets/github_icon.png';
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: .3rem;
 		text-transform: uppercase;
+		background-color: var(--dark-blue);
+		border-radius: 10px;
+		padding: .3rem;
+	}
+
+	.social-dir a span {
+		background-color: var(--light-blue);
+		padding: .2rem 1rem;
+		border-radius: 10px;
 	}
 
 	.social-img {
 		height: auto;
 		width: 4.5rem;
+		border: 2px solid var(--lighter-blue);
+		border-radius: 1000px;
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 1000px) {
 		.description {
 			flex-direction: column;
 		}
 
 		.description p {
 			width: 60% !important;
-		}
-
-		.introduction-container {
 		}
 
 		.introduction-wrapper {

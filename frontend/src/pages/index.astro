@@ -51,8 +51,12 @@ const app = initializeApp(firebaseConfig);
 
 <style is:global>
 	:root {
-		--black: #000000;
-		--white: #FFFFFF;
+		--black: #29353C;
+		--white: #E6E6E6;
+		--dark-blue: #44576D;
+		--green-blue: #AAC7D8;
+		--light-blue: #DFEBF6;
+		--lighter-blue: #DFEBF6;
 
 		--text-white: var(--white);
 		--text-black: var(--black);
@@ -84,6 +88,10 @@ const app = initializeApp(firebaseConfig);
 
 	body {
 		padding-bottom: 2rem !important;
+		color: var(--text-black);
+		background-image: url("/background.jpg");
+		background-size: cover;
+		background-position: center;
 	}
 
 	*,

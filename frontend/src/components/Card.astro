@@ -9,10 +9,10 @@ import testImage from '../assets/test_img.jpg';
 
 
 
-<div class="card">
+<a href="#" class="card">
 	<Image src={ testImage } alt="test image" />
 	<span class="card-title title-font">Scrapy project</span>
-</div>
+</a>
 
 
 
@@ -23,6 +23,7 @@ import testImage from '../assets/test_img.jpg';
 		height: auto;
 		display: flex;
 		border-radius: 20px;
+		box-shadow: 0 2px 4px 0 var(--black);
 	}
 
 	.card img {
@@ -36,7 +37,7 @@ import testImage from '../assets/test_img.jpg';
 		height: 20%;
 		position: absolute;
 		bottom: 0;
-		background-color: var(--black);
+		background: linear-gradient(to right, var(--black), var(--dark-blue));
 		color: var(--text-white);
 		opacity: .8;
 		border-radius: 0 0 20px 20px;
