@@ -1,0 +1,127 @@
+---
+import { Image } from 'astro:assets';
+import mailIcon from '../assets/mail_icon.png';
+import githubIcon from '../assets/github_icon.png';
+---
+
+
+
+
+<div class="introduction-container">
+	<div class="introduction-wrapper">
+		<div class="name-wrapper">
+			<h1 class="title-font">Antón Gendra Rodríguez</h1>
+			<h2>Full-stack developer</h2>
+			<p>with some DevOps seasoning</p>
+		</div>
+		<div class="mail">
+			<a href="mailto:gendra.job@gmail.com"><Image class="mail-icon" src={ mailIcon } alt="emai icon"/>get in touch</a>
+		</div>
+	</div>
+	
+	<div class="description">	
+		<p class="introduction">Currently working for a Startup based in Spain.</p>
+		<p class="mail">My job is to build systems, code new functionalities and solve issues. Ensuring that the best product is delivered to costumers.</p>
+	</div>
+</div>
+
+<div class="social-dir">
+	<a href="https://github.com/gen-4"><Image class="social-img" src={ githubIcon } alt="github icon" />Github</a>
+</div>
+
+
+
+
+
+<style>
+	.introduction-container {
+		width: 100%;
+		padding: 0 20%;
+	}
+
+	.introduction-container p {
+		text-align: justify;
+	}
+	
+	.introduction-wrapper {
+		width: 100%;
+		display: flex;
+	}
+
+	.introduction-wrapper .name-wrapper {
+		width: 65%;
+	}
+
+	.introduction-wrapper .mail {
+		width: 35%;
+	}
+
+	.introduction-wrapper .mail a {
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		border: 2px solid var(--black);
+		border-radius: 10px;
+		padding: 0 1.5rem;
+		gap: .5rem;
+	}
+
+	.introduction-wrapper .mail .mail-icon {
+		width: 3.4rem;
+		height: auto;
+	}
+
+	.name-wrapper {
+		padding-bottom: 2.2rem;
+	}
+
+	.name-wrapper h1 {
+		font-size: 3.8rem;
+	}
+
+	.name-wrapper h2 {
+		font-size: 2.2rem;
+	}
+
+	.name-wrapper p {
+		font-size: 1.5rem;
+	}
+
+	.description {
+		width: 100%;
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.description .introduction {
+		width: 50%;
+	}
+
+	.description .mail {
+		width: 50%;
+	}
+
+	.social-dir {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		padding: 4rem 0;
+	}
+
+	.social-dir a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+	}
+
+	.social-img {
+		height: auto;
+		width: 4.5rem;
+	}
+</style>
+
