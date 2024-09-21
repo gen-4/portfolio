@@ -1,5 +1,6 @@
 ---
-import Card from '../components/Card.astro';
+import Card from '/src/components/Card.astro';
+import projects from '/src/data/projects.json';
 ---
 
 
@@ -9,10 +10,11 @@ import Card from '../components/Card.astro';
 
 
 <div class="list">
-	<Card />
-	<Card />
-	<Card />
-	<Card />
+	{
+		projects.map(project => (
+			<Card project={ project }/>
+		))
+	}
 </div>
 
 
@@ -28,7 +30,7 @@ import Card from '../components/Card.astro';
 	}
 
 
-	@media (max-width: 1000px) {
+	@media (max-width: 600px) {
 		.list {
 			grid-template-columns: 100%;
 			grid-gap: 2.5rem;

@@ -1,6 +1,11 @@
 ---
+import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
-import testImage from '../assets/test_img.jpg';
+
+const { project } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/projects/*.{png,jpeg,jpg}'); 
+if (!images["/src/assets/projects/" + project.image]) throw new Error(`"${project.image}" does not exist in glob: "/src/assets/projects/*.{jpeg,jpg,png}"`);
 ---
 
 
@@ -9,12 +14,24 @@ import testImage from '../assets/test_img.jpg';
 
 
 
-<a href="#" class="card">
+<a href={ project.url } class="card">
 	<div class="info-filter">
-		There will be some info here (technologies and tags)
+		<div class="keywords-wrapper">
+			<div class="technologies-container">
+				{ project.technologies.map( technology => (
+					<span class="project-info technology">{ technology }</span>
+				))}
+			</div>
+
+			<div class="tags-container">
+				{ project.tags.map( tag => (
+					<span class="project-info tag">#{ tag }</span>
+				))}
+			</div>
+		</div>
 	</div>
-	<Image src={ testImage } alt="test image" />
-	<span class="card-title title-font">Scrapy project</span>
+	<Image src={ images["/src/assets/projects/" + project.image]() } alt="test image" />
+	<span class="card-title title-font">{ project.name }</span>
 </a>
 
 
@@ -43,11 +60,21 @@ import testImage from '../assets/test_img.jpg';
 		top: 0;
 		background-color: var(--black);
 		color: var(--text-white);
-		opacity: .8;
+		opacity: .85;
 		border-radius: 20px 20px 0 0;
-		padding: 2rem 3rem;
+		padding: .4rem .8rem;
 		transition: .3s ease-in-out;
 		transform: translateY(-100%);
+		overflow-y: auto;
+	}
+
+	.keywords-wrapper {
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
 	}
 
 	.card:hover .info-filter {
@@ -59,14 +86,50 @@ import testImage from '../assets/test_img.jpg';
 		height: 20%;
 		position: absolute;
 		bottom: 0;
-		background: linear-gradient(to right, var(--black), var(--dark-blue));
+		background-color: var(--black);
 		color: var(--text-white);
-		opacity: .8;
+		opacity: .85;
 		border-radius: 0 0 20px 20px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		font-size: 1.5rem;
+	}
+
+	.project-info {
+		padding: .2rem .8rem;
+		font-size: .7rem;
+		color: var(--text-black);
+	}
+
+	.technologies-container,
+	.tags-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: .4rem;
+		flex-wrap: wrap;
+	}
+
+	.technology {
+		background-color: var(--lighter-blue);
+		border-radius: 8px;
+	}
+
+	.tag {
+		background-color: var(--light-blue);
+		border-radius: 1000px;
+	}
+
+	@media (max-width: 600px) {
+		.card .card-title {
+			height: 22%;
+			font-size: 1.25rem;
+		}
+
+		.card .info-filter {
+			height: 78%;
+		}
 	}
 </style>
 

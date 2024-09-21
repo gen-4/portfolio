@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import mailIcon from '../assets/mail_icon.png';
-import githubIcon from '../assets/github_icon.png';
-import linkedinIcon from '../assets/linkedin_icon.png';
+import mailIcon from '/src/assets/mail_icon.png';
+import githubIcon from '/src/assets/github_icon.png';
+import linkedinIcon from '/src/assets/linkedin_icon.png';
 ---
 
 
@@ -142,7 +142,7 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 	}
 
 	.social-dir a span {
-		background-color: var(--light-blue);
+		background-color: var(--lighter-blue);
 		padding: .2rem 1rem;
 		border-radius: 10px;
 	}
@@ -159,9 +159,9 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 		transform: scale(1.05);
 	}
 
-	@media (max-width: 1000px) {
+	@media (max-width: 600px) {
 		.introduction-container {
-			padding: 0 20%;
+			padding: 0 5%;
 		}
 
 		.name-wrapper {
@@ -178,7 +178,7 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 		}
 
 		.description p {
-			width: 60% !important;
+			width: 100% !important;
 		}
 
 		.introduction-wrapper {
@@ -188,6 +188,10 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 
 		.introduction-wrapper .name-wrapper {
 			width: 100%;
+		}
+		
+		.introduction-wrapper .mail {
+			width: fit-content;
 		}
 	}
 </style>

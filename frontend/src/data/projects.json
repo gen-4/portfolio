@@ -1,0 +1,65 @@
+[
+	{
+		"image": "placeholder.png",
+		"name": "Dotfiles",
+		"url": "https://github.com/gen-4/dotfiles",
+		"technologies": ["nvim", "lua", "fish", "foot", "hyprland", "rofi", "starship", "waybar", "dunst"],
+		"tags": ["configs", "rice"]
+	},
+	{
+		"image": "decision-game.png",
+		"name": "Decision Game",
+		"url": "https://github.com/gen-4/decision-game",
+		"technologies": ["java", "spring-boot", "javascript", "react", "node", "docker", "docker-compose"],
+		"tags": ["inprogress", "game"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Markdown Reader",
+		"url": "https://github.com/gen-4/markdown_reader",
+		"technologies": ["python"],
+		"tags": ["unfinished", "practice", "newbie"]
+	},
+	{
+		"image": "discord-bot.jpeg",
+		"name": "Discord Bot",
+		"url": "https://github.com/gen-4/discord-bot",
+		"technologies": ["python"],
+		"tags": ["unfinished", "practice", "game"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Horse Breed Web",
+		"url": "https://github.com/gen-4/breed-web",
+		"technologies": ["python", "django", "templates"],
+		"tags": ["unfinished", "practice", "newbie"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Scrapy Project",
+		"url": "https://github.com/gen-4/scrapper-project",
+		"technologies": ["python", "scrapy"],
+		"tags": ["finished", "practice", "newbie"]
+	},
+	{	
+		"image": "steganography.png",
+		"name": "Steganography project",
+		"url": "https://github.com/gen-4/steganography-project",
+		"technologies": ["python", "django", "templates"],
+		"tags": ["finished", "practice", "newbie", "encryption", "pixels", "images"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Sleipnir",
+		"url": "https://github.com/gen-4/TFG-Sleipnir",
+		"technologies": ["python", "django", "django_rest_framework", "kotlin", "API"],
+		"tags": ["finished", "TFG", "university", "app", "android", "maps", "tracking", "localization"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Portfolio",
+		"url": "https://github.com/gen-4/portfolio",
+		"technologies": ["javascript", "astro", "node"],
+		"tags": ["firstversion", "ui", "portfolio", "deployed"]
+	}
+]
