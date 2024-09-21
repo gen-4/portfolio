@@ -35,7 +35,7 @@ const app = initializeApp(firebaseConfig);
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
 	</head>
 
 	<body class="body-font">
@@ -57,9 +57,11 @@ const app = initializeApp(firebaseConfig);
 		--green-blue: #AAC7D8;
 		--light-blue: #DFEBF6;
 		--lighter-blue: #DFEBF6;
+		--alpha-dark-blue: rgba(68, 87, 109, 0.8);
 
 		--text-white: var(--white);
 		--text-black: var(--black);
+		--transparent-bg: var(--alpha-dark-blue);
 	}
 
 	.title-font {
@@ -69,7 +71,7 @@ const app = initializeApp(firebaseConfig);
 	}
 
 	.body-font {
-		font-family: "Slabo 27px", serif;
+		font-family: "Merienda", cursive;
 		font-weight: 400;
 		font-style: normal;
 	}	
@@ -88,10 +90,11 @@ const app = initializeApp(firebaseConfig);
 
 	body {
 		padding-bottom: 2rem !important;
-		color: var(--text-black);
-		background-image: url("/background.jpg");
+		color: var(--text-white);
+		background-image: url("/background.png");
 		background-size: cover;
 		background-position: center;
+		background-attachment: fixed;
 	}
 
 	*,
@@ -108,6 +111,13 @@ const app = initializeApp(firebaseConfig);
 	a {
 		text-decoration: none;
 		color: var(--text-black);
+	}
+
+
+	@media (max-width: 1000px) {
+		body {
+			background-position: right;
+		}
 	}
 </style>
 

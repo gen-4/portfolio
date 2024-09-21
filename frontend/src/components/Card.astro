@@ -10,6 +10,9 @@ import testImage from '../assets/test_img.jpg';
 
 
 <a href="#" class="card">
+	<div class="info-filter">
+		There will be some info here (technologies and tags)
+	</div>
 	<Image src={ testImage } alt="test image" />
 	<span class="card-title title-font">Scrapy project</span>
 </a>
@@ -23,13 +26,32 @@ import testImage from '../assets/test_img.jpg';
 		height: auto;
 		display: flex;
 		border-radius: 20px;
-		box-shadow: 0 2px 4px 0 var(--black);
+		box-shadow: 3px 5px 6px -1px var(--dark-blue);
+		overflow: hidden;
 	}
 
 	.card img {
 		width: 100%;
 		height: 100%;
 		border-radius: 20px;
+	}
+
+	.card .info-filter {
+		position: absolute;
+		width: 100%;
+		height: 80%;
+		top: 0;
+		background-color: var(--black);
+		color: var(--text-white);
+		opacity: .8;
+		border-radius: 20px 20px 0 0;
+		padding: 2rem 3rem;
+		transition: .3s ease-in-out;
+		transform: translateY(-100%);
+	}
+
+	.card:hover .info-filter {
+		transform: translateY(0);
 	}
 
 	.card .card-title {

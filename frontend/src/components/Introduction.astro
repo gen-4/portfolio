@@ -38,7 +38,16 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 <style>
 	.introduction-container {
 		width: 100%;
-		padding: 0 20%;
+		padding: 0 35% 0 20%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.introduction-bg {
+		padding: 1rem 2rem;
+		border-radius: 20px;
+		background-color: var(--transparent-bg);
 	}
 
 	.introduction-container p {
@@ -48,6 +57,7 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 	.introduction-wrapper {
 		width: 100%;
 		display: flex;
+		gap: 1rem;
 	}
 
 	.introduction-wrapper .name-wrapper {
@@ -64,12 +74,16 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 		align-items: center;
 		justify-content: center;
 		text-transform: uppercase;
-		border: 2px solid var(--black);
+		border: 2px solid var(--white);
 		border-radius: 10px;
 		padding: 0 1.5rem;
 		gap: .5rem;
-		background: linear-gradient(to bottom right, var(--dark-blue), var(--lighter-blue));
-		box-shadow: 2px 1px 4px 0 var(--dark-blue);
+		background: linear-gradient(to bottom right, var(--green-blue), var(--dark-blue));
+		color: var(--text-white);
+	}
+
+	.introduction-wrapper .mail a:hover {
+		background: linear-gradient(to bottom right, var(--dark-blue), var(--green-blue));
 	}
 
 	.introduction-wrapper .mail .mail-icon {
@@ -138,11 +152,29 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 		width: 4.5rem;
 		border: 2px solid var(--lighter-blue);
 		border-radius: 1000px;
+		transition: .25s;
+	}
+
+	.social-dir a:hover .social-img {
+		transform: scale(1.05);
 	}
 
 	@media (max-width: 1000px) {
+		.introduction-container {
+			padding: 0 20%;
+		}
+
+		.name-wrapper {
+			padding: 1rem 2rem;
+			border-radius: 20px;
+			background-color: var(--transparent-bg);
+		}
+		
 		.description {
 			flex-direction: column;
+			padding: 1rem 2rem;
+			border-radius: 20px;
+			background-color: var(--transparent-bg);
 		}
 
 		.description p {
