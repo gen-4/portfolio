@@ -1,6 +1,6 @@
 [
 	{
-		"image": "placeholder.png",
+		"image": "dotfiles.png",
 		"name": "Dotfiles",
 		"url": "https://github.com/gen-4/dotfiles",
 		"technologies": ["nvim", "lua", "fish", "foot", "hyprland", "rofi", "starship", "waybar", "dunst"],
@@ -61,5 +61,12 @@
 		"url": "https://github.com/gen-4/portfolio",
 		"technologies": ["javascript", "astro", "node"],
 		"tags": ["firstversion", "ui", "portfolio", "deployed"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Gems API",
+		"url": "https://github.com/gen-4/gem-api",
+		"technologies": ["ruby", "ruby_on_rails", "serializers", "API", "docker-compose", "postgresql"],
+		"tags": ["backend", "practice", "newbie", "small"]
 	}
 ]
