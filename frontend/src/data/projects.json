@@ -63,10 +63,17 @@
 		"tags": ["firstversion", "ui", "portfolio", "deployed"]
 	},
 	{
-		"image": "placeholder.png",
+		"image": "gem-api.jpeg",
 		"name": "Gems API",
 		"url": "https://github.com/gen-4/gem-api",
 		"technologies": ["ruby", "ruby_on_rails", "serializers", "API", "docker-compose", "postgresql"],
 		"tags": ["backend", "practice", "newbie", "small"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Stock Register API",
+		"url": "https://github.com/gen-4/stocks-register-api",
+		"technologies": ["java", "spring-boot", "postgresql", "mongodb", "h2", "API", "docker", "docker-compose"],
+		"tags": ["backend", "inprogress"]
 	}
 ]
