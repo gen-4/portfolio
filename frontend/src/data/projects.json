@@ -15,6 +15,20 @@
 	},
 	{
 		"image": "placeholder.png",
+		"name": "Stock Register API",
+		"url": "https://github.com/gen-4/stocks-register-api",
+		"technologies": ["java", "spring-boot", "postgresql", "mongodb", "h2", "API", "docker", "docker-compose"],
+		"tags": ["backend", "inprogress"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Stock Register Frontend",
+		"url": "https://github.com/gen-4/stocks-register-frontend",
+		"technologies": ["js", "react", "redux", "mui"],
+		"tags": ["frontend", "inprogress"]
+	},
+	{
+		"image": "placeholder.png",
 		"name": "Markdown Reader",
 		"url": "https://github.com/gen-4/markdown_reader",
 		"technologies": ["python"],
@@ -68,12 +82,5 @@
 		"url": "https://github.com/gen-4/gem-api",
 		"technologies": ["ruby", "ruby_on_rails", "serializers", "API", "docker-compose", "postgresql"],
 		"tags": ["backend", "practice", "newbie", "small"]
-	},
-	{
-		"image": "placeholder.png",
-		"name": "Stock Register API",
-		"url": "https://github.com/gen-4/stocks-register-api",
-		"technologies": ["java", "spring-boot", "postgresql", "mongodb", "h2", "API", "docker", "docker-compose"],
-		"tags": ["backend", "inprogress"]
 	}
 ]
