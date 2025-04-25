@@ -15,9 +15,24 @@
 	},
 	{
 		"image": "placeholder.png",
+		"name": "Pixel Art AI Wrapper",
+		"url": "https://github.com/gen-4/pixel-ai-wrapper",
+		"technologies": ["node.js", "express.js", "docker", "docker-compose", 
+			"mongodb", "API", "OpenAI", "AI", "LLM", "Next.js", "typescript"],
+		"tags": ["backend", "frontend", "inprogress"]
+	},
+	{
+		"image": "placeholder.png",
 		"name": "Stock Register API",
 		"url": "https://github.com/gen-4/stocks-register-api",
 		"technologies": ["java", "spring-boot", "postgresql", "mongodb", "h2", "API", "docker", "docker-compose"],
+		"tags": ["backend", "inprogress"]
+	},
+	{
+		"image": "placeholder.png",
+		"name": "Horse Network API",
+		"url": "https://github.com/gen-4/horse_network",
+		"technologies": ["go", "gin", "gorm", "postgresql", "API", "docker", "docker-compose"],
 		"tags": ["backend", "inprogress"]
 	},
 	{
