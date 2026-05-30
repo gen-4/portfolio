@@ -7,6 +7,13 @@
 		"tags": ["configs", "rice"]
 	},
 	{
+		"image": "placeholder.png",
+		"name": "Gorrent",
+		"url": "https://github.com/gen-4/gorrent",
+		"technologies": ["go", "peer2peer", "tui", "bubbletea"],
+		"tags": ["firstversion", "torrent", "deployed"]
+	},
+	{
 		"image": "decision-game.png",
 		"name": "Decision Game",
 		"url": "https://github.com/gen-4/decision-game",

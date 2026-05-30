@@ -1,0 +1,45 @@
+
+---
+import { Image } from 'astro:assets';
+import architectureImg from '/src/assets/cronus_architecture.png';
+---
+
+
+
+
+<div class="architecture-container">
+	<div class="architecture-title">
+		<h2 class="title-font">Server Architecture</h2>
+	</div>
+	<Image class="architecture-image" src={ architectureImg } alt="Architecture Image"/>
+</div>
+
+
+
+<style>
+	.architecture-container {
+		width: 100%;
+		padding: 8rem 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.architecture-bg {
+		padding: 1rem 2rem;
+		border-radius: 20px;
+		background-color: var(--transparent-bg);
+	}
+
+	.architecture-title {
+		display: flex;
+		justify-content: center;
+	}
+
+	.architecture-image {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+</style>
+
